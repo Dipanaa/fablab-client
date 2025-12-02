@@ -93,10 +93,6 @@ export default class ModelsComponentComponent implements OnInit,AfterViewInit{
     }
   }
 
-
-
-
-
   private initScene(): void {
 
     this.scene = new THREE.Scene();
@@ -214,7 +210,6 @@ export default class ModelsComponentComponent implements OnInit,AfterViewInit{
   }
 
   //Siguiente cuadro informativo
-  //TODO: 1. Crear la tarjeta de manera dinamica en otra funcion 2. Crear animacion de salida
   nextInformativeSquare(){
     if(this.actualObjPosition() === this.modelo3dTest!.positions!.length) return;
 

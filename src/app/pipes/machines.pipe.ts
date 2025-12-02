@@ -8,7 +8,6 @@ import { noSpaceString } from '../utils/stringFunctions/noSpaceString.function';
 
 export class CategoryFilterPipe implements PipeTransform {
     transform(value: Object3d[], category?: string): Object3d[]{
-      console.log(category);
 
       if(category === "todas"){
         return value;

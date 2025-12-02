@@ -28,21 +28,14 @@ export class NewsService{
     }
   });
 
-
-
   //Metodos
   getNews(): Observable<News[] | null>{
-
-
-    return this.httpclient.get<NewsResponseInterface[]>("https://fablabwebapi20251104221404-crbeb0b9cafvhqg3.canadacentral-01.azurewebsites.net/api/noticias").pipe(
+    return this.httpclient.get<NewsResponseInterface[]>("https://fablabwebapi20251104221404-crbeb0b9cafvhqg3.canadacentral-01.azurewebsites.net/api/noticias/noticiasestado").pipe(
       map((resp)=>{
-        console.log(resp);
         return newsMapperApiToNewsArray(resp);
       }),
       catchError((err)=>{
-        console.log(err);
         return of(null);
-
       })
     );
   }

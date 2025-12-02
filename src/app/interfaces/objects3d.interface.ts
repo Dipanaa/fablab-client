@@ -1,7 +1,4 @@
 
-
-
-
 export interface Object3d{
   id:number,
   name: string,
