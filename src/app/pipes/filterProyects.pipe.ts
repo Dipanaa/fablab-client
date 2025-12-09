@@ -11,7 +11,6 @@ export class filterProjectsPipe implements PipeTransform {
       return proyectos;
     }
 
-    console.log(filtros);
 
     return proyectos.filter((proyecto) => filtros.includes(proyecto.categoria));
   }

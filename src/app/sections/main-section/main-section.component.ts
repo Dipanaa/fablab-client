@@ -12,8 +12,6 @@ import { FormsRegisterComponent } from "./components/forms-register/forms-regist
     CarrouselOwnComponent,
     HierarchyTreeComponent,
     ForUsCardsComponent,
-    ProyectsComponent,
-    FormsRegisterComponent
 ],
   templateUrl: './main-section.component.html',
 })
