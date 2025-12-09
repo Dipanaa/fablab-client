@@ -6,8 +6,8 @@
     <div class="min-w-[200px]">
       <img
         src="{{ item.imageUrl }}"
-        alt="no hay imagen"
-        class="w-full h-full bg-fablab-accent rounded-t-xl"
+        alt="Imagen no encontrada"
+        class="w-full aspect-[4/5] object-cover object-center bg-fablab-accent rounded-t-xl"
       />
     </div>
     <div class="p-2 w-full">
@@ -19,11 +19,18 @@
       class="flex flex-col mb-2 justify-end gap-2 mr-2 h-full items-end sm:flex-row"
     >
       @if (widthWindow() >= 1024 && item.isAnimated) {
-      <button class="btn" [routerLink]="`/maquinas/models/${item.id}`">
-        Tour interactivo 3D
+      <button
+        class="px-3 py-2 rounded-lg bg-fablab-accent hover:bg-fablab-accent-dark text-black font-bold border border-fablab-primary text-fablab-primary text-xs hover:bg-fablab-primary hover:text-black transition"
+        [routerLink]="['/maquinas/models', item.id]"
+      >
+        Tour 3D
       </button>
       }
-      <button class="btn" [routerLink]="`/maquinas/item/${item.id}`">
+
+      <button
+        class="px-4 py-2 rounded-lg bg-fablab-accent text-black text-xs font-bold hover:bg-fablab-accent-dark transition shadow-sm border border-fablab-primary"
+        [routerLink]="['/maquinas/item', item.id]"
+      >
         Ver máquina
       </button>
     </div>
