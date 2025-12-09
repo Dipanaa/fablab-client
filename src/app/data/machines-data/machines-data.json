@@ -2,89 +2,87 @@
   {
     "id": 1,
     "name": "Ender 3 V2",
-    "category":"Maquinas de impresion 3d",
+    "category": "Maquinas de impresion 3d",
     "description": "La Ender 3 V2 es una impresora 3D de escritorio de modelado por deposición fundida (FDM) fabricada por Creality. Es una versión mejorada de la popular Ender 3, diseñada para ofrecer una experiencia de impresión más fácil y silenciosa, ideal tanto para principiantes como para usuarios con más experiencia.",
     "typeModel": "STL",
-    "imageUrl": "../../assets/imgs/testImages/minku-kang-aCniNTiIFd8-unsplash.jpg",
+    "imageUrl": "../../assets/imgs/machines/Ender-3-v2.jpg",
     "isAnimated": true,
-    "path": "../../../../assets/Mini_Ender_3_Pro.stl",
+    "path": "../../../../assets/3dmodels/Mini_Ender_3_Pro.stl",
     "positions": [
-      [-18,137,80],
-      [0,70,200],
-      [80,25,130]
-    ],
-    "content":{
-      "title": "Ender 3 V2",
-      "typeName": "impresora 3D",
-      "contentCard":[{
-        "text": "El fusor, también conocido como hotend,es el componente de la impresora 3D encargado de fundir y extruir el filamento plástico.Lleva el material hasta su punto de fusión y lo deposita capa por capa para construir el objeto con precisión.Su temperatura varía según el tipo de material, como PLA, ABS o PETG, permitiendo una impresión óptima.",
-        "textPosition": "start"
-      },
-      {
-        "text": "La cama caliente es la superficie sobre la que se imprime el objeto y puede calentarse para mejorar la adherencia del filamento y reducir el riesgo de deformaciones.En impresoras 3D de resina, su función cambia,ya que sostiene el objeto mientras se forma desde la base mediante fotocurado, garantizando una correcta solidificación de cada capa.",
-        "textPosition": "start"
-      },
-      {
-        "text": "El panel interactivo, que puede ser una pantalla táctil o LCD, permite al usuario controlar la impresora y ajustar parámetros como temperatura, velocidad y nivelación.Algunas impresoras avanzadas incluyen pantallas con previsualización del modelo antes de la impresión, lo que facilita la configuración y mejora la experiencia de usuario.",
-        "textPosition": "end"
-      }
-    ]
-    }
-  },
-  {
-    "id": 2,
-    "name": "Filamento PLA",
-    "category": "Cortadoras laser",
-    "description": "El filamento PLA (Ácido Poliláctico) es un termoplástico biodegradable derivado de recursos renovables como el maíz o la caña de azúcar. Es uno de los materiales más populares para la impresión 3D debido a su facilidad de uso, baja deformación y compatibilidad con la mayoría de las impresoras FDM. Es ideal para piezas no funcionales y prototipos.",
-    "imageUrl": "../../assets/imgs/testImages/minku-kang-aCniNTiIFd8-unsplash.jpg",
-    "typeModel": "OBJ",
-    "isAnimated": false,
-    "path": "../../../../assets/Mini_Ender_3_Pro.stl"
-
-  },
-  {
-    "id": 3,
-    "name": "Resina UV estándar",
-    "category": "Cortadoras laser",
-    "description": "La resina UV estándar es un fotopolímero líquido que se cura bajo luz ultravioleta. Es el material más común para impresoras 3D de resina (SLA/DLP/LCD) y ofrece una alta precisión y detalle en las impresiones. Es ideal para modelos con geometrías complejas y superficies lisas, aunque suele ser más frágil que el PLA.",
-    "imageUrl": "../../assets/imgs/testImages/minku-kang-aCniNTiIFd8-unsplash.jpg",
-    "typeModel": "STL",
-    "isAnimated": false,
-    "path": "../../../../assets/Mini_Ender_3_Pro.stl"
-
-  },
-  {
-    "id": 4,
-    "name": "Creality CR-10 Smart Pro",
-    "category": "Maquinas de impresion 3d",
-    "description": "La Creality CR-10 Smart Pro es una impresora 3D FDM de gama alta con conectividad inteligente y características avanzadas. Ofrece un gran volumen de impresión, nivelación automática, extrusor de doble engranaje y una pantalla táctil a color. Es perfecta para usuarios que buscan mayor comodidad y fiabilidad en sus impresiones.",
-    "imageUrl": "../../assets/imgs/testImages/minku-kang-aCniNTiIFd8-unsplash.jpg",
-    "typeModel": "FBX",
-    "isAnimated": true,
-    "path": "../../../../assets/Mini_Ender_3_Pro.stl",
-    "positions": [
-      [50, 100, 150],
-      [-20, 50, 80],
-      [100, 150, 20]
+      [-18, 137, 80],
+      [0, 70, 200],
+      [80, 25, 130]
     ],
     "content": {
-      "title": "CR-10 Smart Pro",
-      "typeName": "impresora 3D avanzada",
+      "title": "Ender 3 V2",
+      "typeName": "impresora 3D",
       "contentCard": [
         {
-          "text": "La conectividad Wi-Fi permite controlar la impresora de forma remota a través de una aplicación móvil, lo que facilita el inicio y seguimiento de las impresiones desde cualquier lugar. También es posible cargar modelos y actualizar el firmware de forma inalámbrica, mejorando la experiencia de usuario.",
+          "text": "El fusor, también conocido como hotend, es el componente encargado de fundir y extruir el filamento. Lleva el material hasta su punto de fusión y lo deposita capa por capa para construir el objeto con precisión. Su temperatura varía según el tipo de material, como PLA, ABS o PETG.",
           "textPosition": "start"
         },
         {
-          "text": "El extrusor de doble engranaje proporciona una alimentación de filamento más potente y consistente, lo que reduce los problemas de subextrusión y mejora la calidad de impresión, especialmente con materiales flexibles. Esto garantiza una mayor fiabilidad y un mejor acabado en las piezas.",
+          "text": "La cama caliente es la superficie sobre la que se imprime el objeto y puede calentarse para mejorar la adherencia del filamento y reducir el riesgo de deformaciones. Es una plataforma de vidrio carborundo que facilita el retiro de piezas una vez frías.",
           "textPosition": "start"
         },
         {
-          "text": "La nivelación automática de la cama, asistida por un sensor BLTouch, simplifica enormemente la preparación de la impresora, asegurando una primera capa perfecta en cada impresión. Esta función reduce el tiempo de configuración y minimiza los errores, facilitando el proceso para usuarios de todos los niveles.",
+          "text": "El panel interactivo con pantalla LCD a color y perilla giratoria permite al usuario controlar la impresora y ajustar parámetros como temperatura, velocidad y nivelación de forma intuitiva gracias a su interfaz gráfica mejorada.",
           "textPosition": "end"
         }
       ]
     }
+  },
+  {
+    "id": 2,
+    "name": "Ender 3 V3 SE",
+    "category": "Maquinas de impresion 3d",
+    "description": "La Creality Ender 3 V3 SE es una impresora 3D FDM compacta y fácil de usar, diseñada para una impresión rápida y sin complicaciones. Destaca por su nivelación automática CR-Touch, extrusor directo 'Sprite' y una velocidad máxima de impresión de 250 mm/s, haciéndola perfecta para principiantes y makers.",
+    "imageUrl": "../../assets/imgs/machines/Ender-3-v3-se.jpg",
+    "typeModel": "STL",
+    "isAnimated": false,
+    "path": ""
+    },
+  {
+    "id": 3,
+    "name": "Ender 3 V3 KE",
+    "category": "Maquinas de impresion 3d",
+    "description": "La Creality Ender 3 V3 KE es una evolución de alta velocidad de la serie V3, capaz de imprimir hasta 500 mm/s. Incorpora el sistema operativo Creality OS (basado en Klipper), conexión Wi-Fi, un hotend cerámico de alto flujo y rieles lineales en el eje X, ofreciendo rendimiento profesional en formato de escritorio.",
+    "imageUrl": "../../assets/imgs/machines/Ender-3-v3-ke.jpg",
+    "typeModel": "STL",
+    "isAnimated": true,
+    "path": "../../../../assets/3dmodels/Ender_3_V3_KE.stl",
+    "positions": [
+      [-18, 137, 80],
+      [0, 70, 200],
+      [80, 25, 130]
+    ],
+    "content": {
+      "title": "Ender 3 V3 KE",
+      "typeName": "impresora 3D alta velocidad",
+      "contentCard": [
+        {
+          "text": "El hotend cerámico de 60W rodea la boquilla, permitiendo fundir el filamento rápidamente incluso a altas velocidades. Combinado con una boquilla bimetálica, puede alcanzar hasta 300°C, abriendo la puerta a materiales técnicos como Nylon o Policarbonato.",
+          "textPosition": "start"
+        },
+        {
+          "text": "El eje X con riel lineal de precisión ofrece un movimiento extremadamente suave y con baja resistencia. Esto es clave para mantener la calidad de impresión y evitar vibraciones ('ringing') cuando la máquina opera a su velocidad máxima de 500 mm/s.",
+          "textPosition": "start"
+        },
+        {
+          "text": "La pantalla táctil con Creality OS ofrece una interfaz moderna e intuitiva. Permite vista previa de modelos en tiempo real, autocomprobación del sistema y conexión directa a la nube para control remoto y transferencia de archivos vía Wi-Fi.",
+          "textPosition": "end"
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "name": "Creality CR-10",
+    "category": "Maquinas de impresion 3d",
+    "description": "La Creality CR-10 es un clásico conocido por su gran volumen de impresión de 300x300x400 mm, ideal para proyectos de gran escala que no caben en impresoras estándar. Su estructura robusta de perfiles de aluminio y su diseño de marco abierto la convierten en una máquina fiable y modificable para makers y profesionales.",
+    "imageUrl": "../../assets/imgs/machines/Creality-cr-10.jpg",
+    "typeModel": "STL",
+    "isAnimated": false,
+    "path": ""
   }
-
 ]
