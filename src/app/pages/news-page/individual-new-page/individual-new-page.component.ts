@@ -2,10 +2,11 @@ import { Component, computed, inject, OnInit, signal } from '@angular/core';
 import { NewsService } from '../../../services/news.service';
 import { News } from '../../../interfaces/news.interface';
 import { ActivatedRoute } from '@angular/router';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'individual-new-page',
-  imports: [],
+  imports: [DatePipe],
   templateUrl: './individual-new-page.component.html',
 })
 export default class IndividualNewPageComponent implements OnInit{

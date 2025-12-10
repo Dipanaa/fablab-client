@@ -160,14 +160,44 @@ export default class ModelsComponentComponent implements OnInit, AfterViewInit {
     loader.load(
       machinesdata[this.idModel - 1].path,
       (geometry) => {
+        geometry.rotateX(Math.PI / -2);
+        // 1. Centrar las Geometría
+        geometry.computeBoundingBox();
+        const center = new THREE.Vector3();
+        geometry.boundingBox!.getCenter(center);
+
+        geometry.translate(
+          -center.x,
+          -center.y,
+          -center.z
+        );
+        geometry.computeBoundingBox();
+
+        // El punto más bajo del objeto (en el eje vertical Y)
+        const minY = geometry.boundingBox!.min.y;
+
+        // Traslada la geometría hacia ARRIBA por la magnitud del punto más bajo.
+        // Esto hace que el borde inferior (la base) toque Y=0.
+        geometry.translate(0, -minY, 0);
+
+        // Define el tamaño deseado (e.g., queremos que el lado más largo sea de 10 unidades)
+        const desiredSize = 200;
+
+        // Calcula el factor de escala necesario
+        const size = geometry.boundingBox!.getSize(new THREE.Vector3());
+        const maxDim = Math.max(size.x, size.y, size.z);
+        const scaleFactor = desiredSize / maxDim;
         const material = new THREE.MeshStandardMaterial({
           color: 0xe2e0e0,
           metalness: 0.5,
           roughness: 0.5,
         });
         this.model = new THREE.Mesh(geometry, material);
-        this.model.rotation.x = Math.PI / -2;
+        // Aplica el factor de escala a la malla
+        this.model.scale.set(scaleFactor, scaleFactor, scaleFactor);
+        this.model.position.set(0, 0, 0);
         this.scene.add(this.model);
+        this.camera.lookAt(0,0,0);
       },
       (xhr) => {
         console.log(`Carga: ${(xhr.loaded / xhr.total) * 100}% completada`);

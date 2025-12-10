@@ -7,7 +7,7 @@
 @if(newsService.newsResource.hasValue()){
   <div class="text-black bg-fablab-bg p-5 w-[85%] mx-auto mt-5">
     <p class="mb-2">{{ newsDataGetter()?.epigrafe }}</p>
-    <p>{{ newsDataGetter()?.fechapublicacion }}</p>
+    <p>{{ newsDataGetter()?.fechapublicacion | date}} </p>
     <h1 class="font-bold text-4xl text-justify mx-auto">
       {{ newsDataGetter()?.titulo }}
     </h1>
